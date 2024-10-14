@@ -1,0 +1,179 @@
+.card-user-container {
+    margin-bottom: 1rem;
+    background-color: #fefefe;
+    color: #0a0a0a;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0;
+}
+
+.card-user-container .card-user-avatar .user-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 11.875rem;
+    height: 11.875rem;
+    padding: 0.9375rem;
+}
+
+.card-user-container .card-user-avatar .user-image:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-user-container .card-user-bio {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-user-container .card-user-bio .location {
+    display: inline-block;
+    margin: 0 0.9375rem;
+    color: #767676;
+    font-size: 0.875rem;
+}
+
+.card-user-container .card-user-bio .location-icon,
+.card-user-container .card-user-bio .location-text {
+    display: inline-block;
+    padding: 0 0.3125rem;
+}
+
+.card-user-container .card-user-social {
+    background: #e6e6e6;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-user-container .card-user-social ul {
+    /* display: inline-block; */
+    /* Use flexbox for horizontal layout */
+    display: flex;
+    /* Center the icons */
+    justify-content: center;
+    /* Remove default padding */
+    padding: 0;
+    /* Remove default list styling */
+    list-style: none;
+}
+
+.card-user-container .card-user-social ul li {
+    /* margin: 0 10px; */
+    /* font-size: 1.2em; */
+    /* cursor: pointer; */
+    /* Reduce margin for closer spacing */
+    margin: 0 5px;
+    /* Adjust font size for visibility */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.card-user-container .card-user-social ul li a {
+    /* Ensure the icon color is inherited */
+    color: inherit;
+    /* Remove underline from links */
+    text-decoration: none;
+}
+
+.card-user-container .card-user-social ul li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-user-social {
+    display: flex; 
+    justify-content: center;
+    margin: 0 auto; 
+  }
+  
+
+.card-user-container .card-user-button {
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    background-color: #e3f2fd; /* 薄い青の背景色 */
+    margin: 0; /* デフォルトのマージンをリセット */
+    font-family: Arial, sans-serif; /* フォントを指定 */
+    min-height: 100vh; /* 最小の高さを設定して全体をカバー */
+  }
+  
+  .card-user-container {
+    background-color: #ffffff; /* カードの背景色 */
+    border: 1px solid #b2ebf2; /* 明るい水色のボーダー */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-user-info {
+    background-color: rgba(249, 204, 218, 0.808); /* 極薄い赤色 */
+    padding: 20px; /* 上部のパディング */
+    text-align: center; /* 中央揃え */
+  }
+  
+  .card-user-avatar {
+    cursor: pointer; /* 画像をクリック可能にする */
+    padding: 20px; /* 画像の周りにパディングを追加 */
+    text-align: center; /* 中央揃え */
+  }
+  
+  h1, h2 {
+    color: #0277bd; /* 明るい青色の見出し */
+  }
+  
+  .location {
+    color: #00796b; /* 柔らかい青色のロケーション */
+  }
+  
+  footer {
+    background-color: #e3f2fd; /* フッターの背景色を薄い青に */
+    padding: 20px 0; /* フッターの上下のパディング */
+  }
+  
+  .grid-container.full {
+    background-color: transparent; /* 下部のコンテナの背景を透明に */
+  }
+  
+  .profile-picture {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture img.rounded {
+    width: 120px; /* サイズは必要に応じて調整 */
+    height: 120px; /* サイズは必要に応じて調整 */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* スムーズな変化 */
+}
+
+.profile-picture img.rounded:hover {
+    transform: scale(1.1); /* ホバー時に拡大 */
+}
+
+  
+  .image-tabs {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .image-tabs button {
+    padding: 2px 5px;
+    border: none;
+    background-color: #86b9f1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .image-tabs button:hover {
+    background-color: #86b9f1;
+  }
+  
