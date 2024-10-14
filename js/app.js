@@ -20,3 +20,27 @@ document.addEventListener("DOMContentLoaded", function() {
     headline.textContent = name;
   });
 });
+
+
+const express = require('express');
+const fs = require('fs');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/submit', (req, res) => {
+    const content = req.body.content; // フォームからのデータ
+    fs.appendFile('inquiries.txt', content + '\n', (err) => {
+        if (err) {
+            return res.status(500).send('Error writing to file');
+        }
+        res.send('Content saved!');
+    });
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
